@@ -2874,62 +2874,6 @@
         background: #fff;
       }
 
-      .lead-proof {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        margin: 28px 0 18px;
-        color: #171a1f;
-        font-size: 19px;
-        font-weight: 900;
-      }
-
-      .lead-stars {
-        display: inline-flex;
-        gap: 3px;
-      }
-
-      .lead-stars span {
-        position: relative;
-        width: 25px;
-        height: 25px;
-        display: grid;
-        place-items: center;
-        background: #45b478;
-        font-size: 0;
-        line-height: 1;
-      }
-
-      .lead-stars span::before,
-      .trustpilot-mark::before {
-        width: 20px;
-        height: 20px;
-        content: "";
-        background: #fff;
-        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 92%, 50% 70%, 21% 92%, 32% 57%, 2% 35%, 39% 35%);
-      }
-
-      .lead-proof a {
-        color: #171a1f;
-        text-decoration: underline;
-        text-underline-offset: 3px;
-      }
-
-      .trustpilot-mark {
-        width: 26px;
-        height: 26px;
-        display: inline-grid;
-        place-items: center;
-        background: #1f9d5a;
-        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 92%, 50% 70%, 21% 92%, 32% 57%, 2% 35%, 39% 35%);
-      }
-
-      .trustpilot-mark::before {
-        display: none;
-      }
-
       .lead-consent {
         margin: 0 0 4px;
         color: #8d8f95;
@@ -2962,33 +2906,6 @@
         background: var(--brand-red-soft);
         outline: none;
         transform: translateY(-1px);
-      }
-
-      .lead-logo-strip {
-        display: grid;
-        grid-template-columns: repeat(8, minmax(54px, 1fr));
-        align-items: center;
-        gap: 14px;
-        margin-top: 18px;
-        color: rgba(73, 76, 82, 0.48);
-        filter: grayscale(1);
-        opacity: 0.64;
-        text-align: center;
-      }
-
-      .lead-logo-strip span {
-        min-height: 42px;
-        display: grid;
-        place-items: center;
-        font-size: clamp(17px, 1.8vw, 30px);
-        font-weight: 900;
-        line-height: 1;
-      }
-
-      .lead-logo-strip .soft-script {
-        font-family: Georgia, 'Times New Roman', serif;
-        font-weight: 500;
-        font-style: italic;
       }
 
       @media (max-width: 1280px) {
@@ -3049,27 +2966,10 @@
           font-size: 17px;
         }
 
-        .lead-proof {
-          margin: 32px 0 22px;
-          font-size: 19px;
-        }
-
-        .lead-stars span {
-          width: 25px;
-          height: 25px;
-          font-size: 18px;
-        }
-
         .lead-submit {
           min-height: 64px;
           font-size: 21px;
         }
-
-        .lead-logo-strip {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-          gap: 12px;
-        }
-
 
         .home-hero-title {
           font-size: clamp(36px, 10.5vw, 52px);
@@ -3383,14 +3283,6 @@
               <input type="tel" name="phone" placeholder="South Africa +27" autocomplete="tel" />
             </div>
 
-            <div class="lead-proof" aria-label="Review rating">
-              <span>Excellent</span>
-              <span class="lead-stars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>
-              <a href="work.html">619 reviews on</a>
-              <span class="trustpilot-mark" aria-hidden="true"></span>
-              <span>Trustpilot</span>
-            </div>
-
             <p class="lead-consent">
               By clicking the button below, you consent for Thinksphere and partners to use automated technology,
               including pre-recorded messages, cell phones and texts, and email to contact you at the number and email
@@ -3398,10 +3290,6 @@
             </p>
 
             <button class="lead-submit" type="submit">Work with us</button>
-
-            <div class="lead-logo-strip" aria-label="Representative brands">
-              <span>Accor</span><span>Mitsubishi</span><span>hp</span><span>ESPN</span><span>Adobe</span><span>LinkedIn</span><span>Decathlon</span><span class="soft-script">pwc</span>
-            </div>
           </form>
         </section>
       </div>
