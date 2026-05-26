@@ -2425,15 +2425,17 @@
 
       .logo-wall.is-client-logos {
         min-height: auto;
-        grid-template-columns: repeat(4, minmax(92px, 1fr));
-        grid-auto-rows: 78px;
-        gap: 12px;
+        width: min(100%, 1140px);
+        grid-template-columns: repeat(4, minmax(128px, 1fr));
+        grid-auto-rows: 102px;
+        gap: 18px;
         align-self: end;
-        padding: 18px;
-        border: 1px solid rgba(255, 255, 255, 0.72);
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0.96);
-        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+        justify-self: center;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
       }
 
       .logo-wall.is-client-logos .logo-mark {
@@ -2441,18 +2443,20 @@
         height: 100%;
         min-width: 0;
         min-height: 0;
-        padding: 10px;
-        border: 1px solid rgba(9, 11, 16, 0.08);
-        border-radius: 6px;
+        padding: 14px;
+        border: 1px solid rgba(9, 11, 16, 0.07);
+        border-radius: 8px;
         background: #fff;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
         filter: none;
         opacity: 1;
+        overflow: hidden;
       }
 
       .logo-wall.is-client-logos .logo-mark img {
         display: block;
-        width: 100%;
-        height: 100%;
+        width: 96%;
+        height: 82%;
         object-fit: contain;
       }
 
@@ -2959,10 +2963,10 @@
         }
 
         .logo-wall.is-client-logos {
-          width: min(100%, 760px);
+          width: min(100%, 900px);
           grid-template-columns: repeat(3, minmax(112px, 1fr));
-          grid-auto-rows: 88px;
-          gap: 14px;
+          grid-auto-rows: 104px;
+          gap: 16px;
         }
 
         .finder-card {
@@ -2972,6 +2976,16 @@
       }
 
       @media (max-width: 760px) {
+        .home-hero {
+          min-height: auto;
+          overflow: visible;
+          padding-bottom: 34px;
+        }
+
+        .home-hero-shell {
+          min-height: auto;
+        }
+
         .lead-modal {
           padding: 0;
         }
@@ -3024,7 +3038,8 @@
         }
 
         .home-hero-lower {
-          padding-top: 44px;
+          gap: 24px;
+          padding-top: 34px;
         }
 
         .logo-wall {
@@ -3035,10 +3050,21 @@
         }
 
         .logo-wall.is-client-logos {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-          grid-auto-rows: 74px;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          grid-auto-rows: 72px;
           gap: 10px;
-          padding: 12px;
+          padding: 0;
+        }
+
+        .logo-wall.is-client-logos .logo-mark {
+          padding: 7px;
+          border-radius: 7px;
+          box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+        }
+
+        .logo-wall.is-client-logos .logo-mark img {
+          width: 96%;
+          height: 82%;
         }
 
         .finder-card {
@@ -3123,24 +3149,24 @@
 
             <div class="home-hero-lower">
               <div class="logo-wall is-client-logos" aria-label="Representative customer logos">
-                <span class="logo-mark"><img src="assets/client-logos/LVB_colour_500x500.png" alt="LVB" loading="lazy" /></span>
-                <span class="logo-mark"><img src="assets/client-logos/Stephen_Smith_colour_500x500.png" alt="Stephen Smith" loading="lazy" /></span>
-                <span class="logo-mark"><img src="assets/client-logos/TopGear_SA_colour_500x500.png" alt="TopGear SA" loading="lazy" /></span>
-                <span class="logo-mark"><img src="assets/client-logos/Point_to_Point_Capital_colour_500x500.png" alt="Point to Point Capital" loading="lazy" /></span>
-                <span class="logo-mark"><img src="assets/client-logos/Afriboot_colour_500x500.png" alt="Afriboot" loading="lazy" /></span>
-                <span class="logo-mark"><img src="assets/client-logos/VisaRequest_colour_500x500.png" alt="VisaRequest" loading="lazy" /></span>
-                <span class="logo-mark"><img src="assets/client-logos/DuGill_colour_500x500.png" alt="DuGill" loading="lazy" /></span>
-                <span class="logo-mark"><img src="assets/client-logos/Refresche_colour_500x500.png" alt="Refresche" loading="lazy" /></span>
-                <span class="logo-mark"><img src="assets/client-logos/MeiCare_Solutions_colour_500x500.png" alt="MeiCare Solutions" loading="lazy" /></span>
-                <span class="logo-mark"><img src="assets/client-logos/Eco_Proof_Africa_colour_500x500.png" alt="Eco Proof Africa" loading="lazy" /></span>
-                <span class="logo-mark"><img src="assets/client-logos/GrootFM_colour_500x500.png" alt="GrootFM" loading="lazy" /></span>
-                <span class="logo-mark"><img src="assets/client-logos/UStudy_Academy_colour_500x500.png" alt="UStudy Academy" loading="lazy" /></span>
-                <span class="logo-mark"><img src="assets/client-logos/AMAX_colour_500x500.png" alt="AMAX" loading="lazy" /></span>
-                <span class="logo-mark"><img src="assets/client-logos/CarrierBliss_colour_500x500.png" alt="CarrierBliss" loading="lazy" /></span>
-                <span class="logo-mark"><img src="assets/client-logos/DermaFit_colour_500x500.png" alt="DermaFit" loading="lazy" /></span>
-                <span class="logo-mark"><img src="assets/client-logos/BuildVolume_colour_500x500.png" alt="BuildVolume" loading="lazy" /></span>
-                <span class="logo-mark"><img src="assets/client-logos/Bosbul_colour_500x500.png" alt="Bosbul" loading="lazy" /></span>
-                <span class="logo-mark"><img src="assets/client-logos/Lynkspire_colour_500x500.png" alt="Lynkspire" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/hero/LVB_colour_500x500.png" alt="LVB" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/hero/Stephen_Smith_colour_500x500.png" alt="Stephen Smith" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/hero/TopGear_SA_colour_500x500.png" alt="TopGear SA" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/hero/Point_to_Point_Capital_colour_500x500.png" alt="Point to Point Capital" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/hero/Afriboot_colour_500x500.png" alt="Afriboot" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/hero/VisaRequest_colour_500x500.png" alt="VisaRequest" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/hero/DuGill_colour_500x500.png" alt="DuGill" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/hero/Refresche_colour_500x500.png" alt="Refresche" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/hero/MeiCare_Solutions_colour_500x500.png" alt="MeiCare Solutions" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/hero/Eco_Proof_Africa_colour_500x500.png" alt="Eco Proof Africa" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/hero/GrootFM_colour_500x500.png" alt="GrootFM" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/hero/UStudy_Academy_colour_500x500.png" alt="UStudy Academy" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/hero/AMAX_colour_500x500.png" alt="AMAX" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/hero/CarrierBliss_colour_500x500.png" alt="CarrierBliss" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/hero/DermaFit_colour_500x500.png" alt="DermaFit" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/hero/BuildVolume_colour_500x500.png" alt="BuildVolume" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/hero/Bosbul_colour_500x500.png" alt="Bosbul" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/hero/Lynkspire_colour_500x500.png" alt="Lynkspire" loading="lazy" /></span>
               </div>
 
               <form class="finder-card" action="https://formspree.io/f/xzdyendn" method="POST" aria-label="How can we help you get found?" data-finder-form>
