@@ -2423,6 +2423,39 @@
         color: #fff;
       }
 
+      .logo-wall.is-client-logos {
+        min-height: auto;
+        grid-template-columns: repeat(4, minmax(92px, 1fr));
+        grid-auto-rows: 78px;
+        gap: 12px;
+        align-self: end;
+        padding: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.72);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+      }
+
+      .logo-wall.is-client-logos .logo-mark {
+        width: 100%;
+        height: 100%;
+        min-width: 0;
+        min-height: 0;
+        padding: 10px;
+        border: 1px solid rgba(9, 11, 16, 0.08);
+        border-radius: 6px;
+        background: #fff;
+        filter: none;
+        opacity: 1;
+      }
+
+      .logo-wall.is-client-logos .logo-mark img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
       .logo-mark {
         position: relative;
         display: inline-grid;
@@ -2925,6 +2958,13 @@
           margin: 0 auto;
         }
 
+        .logo-wall.is-client-logos {
+          width: min(100%, 760px);
+          grid-template-columns: repeat(3, minmax(112px, 1fr));
+          grid-auto-rows: 88px;
+          gap: 14px;
+        }
+
         .finder-card {
           width: min(100%, 880px);
           margin: 0 auto;
@@ -2992,6 +3032,13 @@
           grid-template-columns: repeat(2, minmax(0, 1fr));
           grid-auto-rows: 70px;
           gap: 16px 18px;
+        }
+
+        .logo-wall.is-client-logos {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          grid-auto-rows: 74px;
+          gap: 10px;
+          padding: 12px;
         }
 
         .finder-card {
@@ -3075,27 +3122,25 @@
             </div>
 
             <div class="home-hero-lower">
-              <div class="logo-wall" aria-label="Representative customer logos">
-                <span class="logo-mark hp"><span>hp</span></span>
-                <span class="logo-mark sofi">SoFi <i></i></span>
-                <span class="logo-mark intuit">INTUIT</span>
-                <span class="logo-mark mitsubishi"><i></i><span>MITSUBISHI<br />MOTORS</span></span>
-                <span class="logo-mark adobe"><i></i><span>Adobe</span></span>
-                <span class="logo-mark nissan">NISSAN</span>
-                <span class="logo-mark marriott"><i></i><span>MARRIOTT</span></span>
-                <span class="logo-mark loreal">L'OREAL</span>
-                <span class="logo-mark kumon">KUMON</span>
-                <span class="logo-mark cartier">Cartier</span>
-                <span class="logo-mark dhl">DHL</span>
-                <span class="logo-mark clarins">CLARINS</span>
-                <span class="logo-mark unilever"><i>U</i><span>Unilever</span></span>
-                <span class="logo-mark canon">Canon</span>
-                <span class="logo-mark prudential"><i></i><span>Prudential</span></span>
-                <span class="logo-mark church">CHURCH &amp; DWIGHT<br />CO., INC.</span>
-                <span class="logo-mark western"><i></i><span>Western<br />Union</span></span>
-                <span class="logo-mark sony"><i></i><span>SONY MUSIC</span></span>
-                <span class="logo-mark domino"><i></i><span>Domino's<br />Pizza</span></span>
-                <span class="logo-mark levis">LEVI'S</span>
+              <div class="logo-wall is-client-logos" aria-label="Representative customer logos">
+                <span class="logo-mark"><img src="assets/client-logos/LVB_colour_500x500.png" alt="LVB" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/Stephen_Smith_colour_500x500.png" alt="Stephen Smith" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/TopGear_SA_colour_500x500.png" alt="TopGear SA" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/Point_to_Point_Capital_colour_500x500.png" alt="Point to Point Capital" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/Afriboot_colour_500x500.png" alt="Afriboot" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/VisaRequest_colour_500x500.png" alt="VisaRequest" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/DuGill_colour_500x500.png" alt="DuGill" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/Refresche_colour_500x500.png" alt="Refresche" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/MeiCare_Solutions_colour_500x500.png" alt="MeiCare Solutions" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/Eco_Proof_Africa_colour_500x500.png" alt="Eco Proof Africa" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/GrootFM_colour_500x500.png" alt="GrootFM" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/UStudy_Academy_colour_500x500.png" alt="UStudy Academy" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/AMAX_colour_500x500.png" alt="AMAX" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/CarrierBliss_colour_500x500.png" alt="CarrierBliss" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/DermaFit_colour_500x500.png" alt="DermaFit" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/BuildVolume_colour_500x500.png" alt="BuildVolume" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/Bosbul_colour_500x500.png" alt="Bosbul" loading="lazy" /></span>
+                <span class="logo-mark"><img src="assets/client-logos/Lynkspire_colour_500x500.png" alt="Lynkspire" loading="lazy" /></span>
               </div>
 
               <form class="finder-card" action="https://formspree.io/f/xzdyendn" method="POST" aria-label="How can we help you get found?" data-finder-form>
