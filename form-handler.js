@@ -45,7 +45,17 @@
           submitButton.disabled = false;
           if (originalLabel && "innerHTML" in submitButton) submitButton.innerHTML = originalLabel;
         }
-        form.submit();
+
+        let status = form.querySelector("[data-form-status]");
+        if (!status) {
+          status = document.createElement("p");
+          status.setAttribute("data-form-status", "");
+          status.setAttribute("role", "status");
+          status.style.marginTop = "12px";
+          status.style.color = "#ffb199";
+          form.appendChild(status);
+        }
+        status.textContent = "Something went wrong. Please try again in a moment.";
       }
     });
   });
