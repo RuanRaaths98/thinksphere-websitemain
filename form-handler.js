@@ -8,11 +8,10 @@
   }
 
   function redirectToThankYou() {
-    const params = new URLSearchParams({
-      submitted: "1",
-      source: getSourceName(),
-    });
-    window.location.href = `/thank-you?${params.toString()}`;
+    try {
+      sessionStorage.setItem("lead_submission_source", getSourceName());
+    } catch (_) {}
+    window.location.href = "/thank-you";
   }
 
   forms.forEach((form) => {

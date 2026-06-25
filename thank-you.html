@@ -424,9 +424,14 @@
 </script>
 <script>
   window.dataLayer = window.dataLayer || [];
+  let leadSource = "unknown";
+  try {
+    leadSource = sessionStorage.getItem("lead_submission_source") || leadSource;
+    sessionStorage.removeItem("lead_submission_source");
+  } catch (_) {}
   window.dataLayer.push({
     event: "lead_submission",
-    source: new URLSearchParams(window.location.search).get("source") || "unknown",
+    source: leadSource,
   });
 </script>
 
