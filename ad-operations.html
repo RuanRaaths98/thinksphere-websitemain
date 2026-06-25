@@ -75,5 +75,9 @@
     <script>const leadModal=document.querySelector("#lead-modal"),leadOpeners=document.querySelectorAll("[data-lead-open]"),leadClosers=document.querySelectorAll("[data-lead-close]"),firstLeadField=document.querySelector("#lead-name");function openLeadModal(){if(!leadModal)return;leadModal.classList.add("is-open"),leadModal.setAttribute("aria-hidden","false"),document.body.style.overflow="hidden",setTimeout(()=>firstLeadField?.focus(),120)}function closeLeadModal(){if(!leadModal)return;leadModal.classList.remove("is-open"),leadModal.setAttribute("aria-hidden","true"),document.body.style.overflow=""}leadOpeners.forEach(e=>e.addEventListener("click",openLeadModal)),leadClosers.forEach(e=>e.addEventListener("click",closeLeadModal)),document.addEventListener("keydown",e=>{"Escape"===e.key&&closeLeadModal()});</script>
       <script src="form-handler.js"></script>
       <script src="nav-contact.js"></script>
+      <!-- Meta Pixel Code -->
+    <script src="meta-pixel.js"></script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1394943821614425&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
   </body>
 </html>
