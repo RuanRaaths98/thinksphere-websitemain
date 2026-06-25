@@ -1,4 +1,5 @@
-.nav-service.is-open .services-dropdown {
+.nav-service.is-open .services-dropdown,
+.services-dropdown.is-mobile-open {
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
@@ -50,11 +51,13 @@
     border-radius: 18px;
     overscroll-behavior: contain;
     transform: translate3d(0, 6px, 0);
-    z-index: 300;
+    z-index: 999;
   }
 
   .nav-service.is-open .services-dropdown,
-  .nav-service.is-open .services-dropdown.services-mega {
+  .nav-service.is-open .services-dropdown.services-mega,
+  .services-dropdown.is-mobile-open,
+  .services-dropdown.services-mega.is-mobile-open {
     transform: translate3d(0, 0, 0);
   }
 

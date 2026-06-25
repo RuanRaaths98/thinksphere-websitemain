@@ -20,12 +20,36 @@
     });
   }
 
+  function isMobileNav() {
+    return window.matchMedia('(max-width: 900px)').matches;
+  }
+
+  function returnDropdown(service, dropdown) {
+    const placeholder = service._dropdownPlaceholder;
+    if (placeholder && placeholder.parentNode) {
+      placeholder.parentNode.insertBefore(dropdown, placeholder);
+      placeholder.remove();
+    }
+    dropdown.classList.remove('is-mobile-open');
+    service._dropdownPlaceholder = null;
+  }
+
+  function portalDropdown(service, dropdown) {
+    if (!isMobileNav() || dropdown.classList.contains('is-mobile-open')) return;
+    const placeholder = document.createComment('mobile services dropdown');
+    dropdown.parentNode.insertBefore(placeholder, dropdown);
+    service._dropdownPlaceholder = placeholder;
+    document.body.appendChild(dropdown);
+    dropdown.classList.add('is-mobile-open');
+  }
+
   function closeService(service) {
     const trigger = service.querySelector('.nav-trigger');
-    const dropdown = service.querySelector('.services-dropdown');
+    const dropdown = service.querySelector('.services-dropdown') || document.querySelector(`#${trigger?.getAttribute('aria-controls')}`);
     service.classList.remove('is-open');
     trigger?.setAttribute('aria-expanded', 'false');
     dropdown?.setAttribute('aria-hidden', 'true');
+    if (dropdown) returnDropdown(service, dropdown);
   }
 
   function closeAll(except) {
@@ -51,7 +75,12 @@
       service.classList.toggle('is-open', willOpen);
       trigger.setAttribute('aria-expanded', String(willOpen));
       dropdown.setAttribute('aria-hidden', String(!willOpen));
-      if (willOpen) settleOpenPosition(service, trigger);
+      if (willOpen) {
+        portalDropdown(service, dropdown);
+        settleOpenPosition(service, trigger);
+      } else {
+        returnDropdown(service, dropdown);
+      }
     });
 
     dropdown.addEventListener('click', (event) => {
@@ -60,12 +89,14 @@
   });
 
   document.addEventListener('click', (event) => {
-    if (!event.target.closest('.nav-service')) closeAll();
+    if (!event.target.closest('.nav-service, .services-dropdown.is-mobile-open')) closeAll();
   });
 
   window.addEventListener('resize', () => {
     const open = document.querySelector('.nav-service.is-open');
-    if (open) setDropdownTop(open);
+    if (!open) return;
+    if (!isMobileNav()) closeAll();
+    else setDropdownTop(open);
   }, { passive: true });
 
   window.addEventListener('scroll', () => {
