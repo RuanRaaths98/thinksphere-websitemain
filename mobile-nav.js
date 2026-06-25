@@ -5,8 +5,19 @@
   function setDropdownTop(service) {
     const header = service.closest('.site-header') || document.querySelector('.site-header');
     if (!header) return;
-    const bottom = Math.ceil(header.getBoundingClientRect().bottom + 8);
+    const bottom = Math.max(72, Math.ceil(header.getBoundingClientRect().bottom + 10));
+    const available = Math.max(220, window.innerHeight - bottom - 12);
     document.documentElement.style.setProperty('--mobile-nav-dropdown-top', `${bottom}px`);
+    document.documentElement.style.setProperty('--mobile-nav-dropdown-height', `${available}px`);
+  }
+
+  function settleOpenPosition(service, trigger) {
+    trigger.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+    setDropdownTop(service);
+    requestAnimationFrame(() => {
+      setDropdownTop(service);
+      setTimeout(() => setDropdownTop(service), 80);
+    });
   }
 
   function closeService(service) {
@@ -40,7 +51,7 @@
       service.classList.toggle('is-open', willOpen);
       trigger.setAttribute('aria-expanded', String(willOpen));
       dropdown.setAttribute('aria-hidden', String(!willOpen));
-      if (willOpen) setDropdownTop(service);
+      if (willOpen) settleOpenPosition(service, trigger);
     });
 
     dropdown.addEventListener('click', (event) => {

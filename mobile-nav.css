@@ -42,14 +42,14 @@
     left: 14px;
     width: auto;
     max-width: none;
-    max-height: min(68dvh, calc(100dvh - var(--mobile-nav-dropdown-top, 112px) - 16px));
+    max-height: min(74dvh, var(--mobile-nav-dropdown-height, calc(100dvh - var(--mobile-nav-dropdown-top, 112px) - 16px)));
     grid-template-columns: 1fr;
     gap: 18px;
     padding: 18px;
     overflow-y: auto;
     border-radius: 18px;
     overscroll-behavior: contain;
-    transform: translate3d(0, 8px, 0);
+    transform: translate3d(0, 6px, 0);
     z-index: 300;
   }
 
@@ -82,7 +82,7 @@
   .services-dropdown.services-mega {
     right: 10px;
     left: 10px;
-    max-height: min(72dvh, calc(100dvh - var(--mobile-nav-dropdown-top, 112px) - 12px));
+    max-height: min(78dvh, var(--mobile-nav-dropdown-height, calc(100dvh - var(--mobile-nav-dropdown-top, 112px) - 12px)));
     padding: 16px;
   }
 }
