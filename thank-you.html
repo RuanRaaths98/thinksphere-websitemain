@@ -359,7 +359,7 @@
     </nav>
 
     <a class="nav-cta" href="thank-you.html">
-      <span>Book A Call</span>
+      <span>Work With Us</span>
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>
     </a>
   </div>
@@ -369,8 +369,8 @@
   <div class="ty-card">
     <div class="ty-icon">✓</div>
     <p class="ty-eyebrow">Request received</p>
-    <h1 class="ty-heading">You're booked in!</h1>
-    <p class="ty-body">We've received your AI Visibility Audit request and will be in touch within 24 hours to confirm your free session. Keep an eye on your inbox.</p>
+    <h1 class="ty-heading">Thanks, we received your request!</h1>
+    <p class="ty-body">Your submission is in. We will review the details and come back with the clearest next move within 24 hours.</p>
 
     <div class="ty-steps">
       <p class="ty-steps-heading">What happens next</p>
@@ -380,7 +380,7 @@
       </div>
       <div class="ty-step-item">
         <div class="ty-step-num">2</div>
-        <p class="ty-step-text">You'll receive a personalised discovery call invitation within 24 hours.</p>
+        <p class="ty-step-text">We will reply with the best next step or a discovery call invitation within 24 hours.</p>
       </div>
       <div class="ty-step-item">
         <div class="ty-step-num">3</div>
@@ -388,9 +388,9 @@
       </div>
     </div>
 
-    <a href="ai-search-optimization.html" class="btn-back">
+    <a href="index.html" class="btn-back">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
-      Back to GEO / AEO / SEO page
+      Back to home
     </a>
   </div>
 </main>
@@ -421,6 +421,13 @@
     glow.style.top  = cy + 'px';
     requestAnimationFrame(animateGlow);
   })();
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: "lead_submission",
+    source: new URLSearchParams(window.location.search).get("source") || "unknown",
+  });
 </script>
 
 </body>
