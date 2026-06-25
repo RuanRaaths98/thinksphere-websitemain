@@ -63,6 +63,11 @@
       animation: none;
     }
 
+    body::after {
+      content: none !important;
+      display: none !important;
+    }
+
     /* — CURSOR GLOW ————————————————————————————————————— */
     #cursor-glow {
       position: fixed;
@@ -114,10 +119,12 @@
       justify-content: center;
       padding: 132px 24px 84px;
       position: relative;
-      z-index: 1;
+      z-index: 3;
     }
 
     .ty-card {
+      position: relative;
+      z-index: 4;
       max-width: 680px;
       width: min(100%, 680px);
       max-width: calc(100vw - 48px);
