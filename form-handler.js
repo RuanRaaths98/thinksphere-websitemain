@@ -12,7 +12,7 @@
       submitted: "1",
       source: getSourceName(),
     });
-    window.location.href = `thank-you.html?${params.toString()}`;
+    window.location.href = `/thank-you?${params.toString()}`;
   }
 
   forms.forEach((form) => {
