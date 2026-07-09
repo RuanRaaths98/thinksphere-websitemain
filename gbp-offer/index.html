@@ -1,0 +1,1065 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Top 3 in 90 Days Local SEO Funnel</title>
+  <style>
+    :root {
+      --ink: #101525;
+      --muted: #5f6674;
+      --line: #e6e9ee;
+      --soft: #f7faf8;
+      --green: #ff0000;
+      --green-dark: #b80000;
+      --red: #f0372d;
+      --yellow: #f7c84b;
+      --shadow: 0 16px 45px rgba(18, 24, 38, .10);
+      --max: 1160px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #fff;
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.45;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.06;
+      letter-spacing: 0;
+    }
+
+    .page {
+      overflow: hidden;
+    }
+
+    .section {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 34px 24px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(300px, .9fr) minmax(420px, 1.1fr);
+      gap: 52px;
+      align-items: center;
+      min-height: 520px;
+      padding-top: 26px;
+      padding-bottom: 28px;
+    }
+
+    .site-logo {
+      display: inline-block;
+      margin-bottom: 22px;
+    }
+
+    .site-logo img {
+      width: 142px;
+      height: auto;
+    }
+
+    h1 {
+      font-size: clamp(42px, 5.2vw, 72px);
+      max-width: 560px;
+    }
+
+    .green-text {
+      color: var(--green);
+    }
+
+    .hero-copy {
+      color: #2d3442;
+      max-width: 520px;
+      margin-top: 24px;
+      font-size: 17px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 28px;
+      border-radius: 7px;
+      border: 1px solid var(--green);
+      background: linear-gradient(180deg, #ff3b30, #ff0000);
+      box-shadow: 0 12px 24px rgba(255, 0, 0, .20);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 900;
+      text-decoration: none;
+      white-space: normal;
+      text-align: center;
+    }
+
+    .hero .button {
+      margin-top: 24px;
+      width: min(360px, 100%);
+    }
+
+    .micro {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 12px;
+    }
+
+    .map-stack {
+      position: relative;
+      min-height: 430px;
+    }
+
+    .map-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .search-bar {
+      height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 18px;
+      border-bottom: 1px solid var(--line);
+      color: #252b38;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .glass {
+      width: 15px;
+      height: 15px;
+      border: 2px solid #7c8492;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .glass:after {
+      content: "";
+      position: absolute;
+      width: 7px;
+      height: 2px;
+      right: -6px;
+      bottom: -4px;
+      background: #7c8492;
+      transform: rotate(45deg);
+    }
+
+    .google-card-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 320px;
+    }
+
+    .results-list {
+      padding: 18px;
+      border-right: 1px solid var(--line);
+    }
+
+    .result-title {
+      font-size: 14px;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+
+    .result {
+      display: grid;
+      grid-template-columns: 26px 1fr 34px 34px;
+      gap: 10px;
+      align-items: center;
+      padding: 11px 0;
+      border-bottom: 1px solid #eef0f3;
+    }
+
+    .rank-dot {
+      width: 23px;
+      height: 23px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--green);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .rank-dot.light {
+      background: #dfe5e1;
+      color: #8d95a1;
+    }
+
+    .biz-name {
+      display: block;
+      font-size: 13px;
+      font-weight: 900;
+      margin-bottom: 3px;
+    }
+
+    .stars {
+      display: block;
+      width: 62px;
+      height: 10px;
+      margin: 2px 0 3px;
+      background:
+        radial-gradient(circle, #f3b623 0 4px, transparent 4.5px) 0 0 / 12px 10px repeat-x;
+    }
+
+    .stars.four {
+      width: 50px;
+    }
+
+    .biz-meta {
+      color: var(--muted);
+      display: block;
+      font-size: 11px;
+    }
+
+    .circle-btn {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid #dce2ea;
+      background: #f9fbff;
+      position: relative;
+    }
+
+    .circle-btn:before {
+      content: "";
+      position: absolute;
+      inset: 9px;
+      border: 2px solid #2f65c9;
+      border-radius: 50%;
+    }
+
+    .map-art {
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(32deg, transparent 0 30%, rgba(255,255,255,.7) 31% 32%, transparent 33%),
+        linear-gradient(145deg, transparent 0 45%, rgba(255,255,255,.8) 46% 47%, transparent 48%),
+        linear-gradient(90deg, #edf6ee 0 24%, #f4f1e9 24% 27%, #eef7ef 27% 54%, #e7f1fb 54% 57%, #f5f2e9 57% 100%);
+    }
+
+    .road {
+      position: absolute;
+      height: 7px;
+      width: 145%;
+      background: rgba(255,255,255,.92);
+      border: 1px solid rgba(207, 216, 224, .85);
+      transform: rotate(-24deg);
+      left: -80px;
+    }
+
+    .road.one {
+      top: 92px;
+    }
+
+    .road.two {
+      top: 190px;
+      transform: rotate(20deg);
+    }
+
+    .road.three {
+      top: 250px;
+      transform: rotate(-5deg);
+    }
+
+    .pin {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border-radius: 50% 50% 50% 0;
+      background: #e84236;
+      transform: rotate(-45deg);
+      box-shadow: 0 5px 13px rgba(232, 66, 54, .24);
+    }
+
+    .pin:after {
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #fff;
+      left: 6px;
+      top: 6px;
+    }
+
+    .pin.a {
+      left: 58%;
+      top: 94px;
+    }
+
+    .pin.b {
+      left: 70%;
+      top: 172px;
+    }
+
+    .pin.c {
+      left: 42%;
+      top: 232px;
+    }
+
+    .note-arrow {
+      position: absolute;
+      left: -82px;
+      top: 92px;
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-align: right;
+    }
+
+    .note-arrow:after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 34px;
+      margin-left: auto;
+      border-right: 4px solid var(--green);
+      border-bottom: 4px solid var(--green);
+      border-radius: 0 0 36px 0;
+      transform: rotate(22deg);
+    }
+
+    .section-title {
+      text-align: center;
+      max-width: 860px;
+      margin: 0 auto 28px;
+    }
+
+    .eyebrow {
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .section-title h2,
+    .left-title h2 {
+      font-size: clamp(28px, 3.5vw, 42px);
+    }
+
+    .section-title p {
+      color: var(--muted);
+      font-size: 17px;
+      margin-top: 12px;
+    }
+
+    .clean-list {
+      display: grid;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .clean-list li {
+      position: relative;
+      padding-left: 26px;
+      color: #252d3c;
+      font-size: 15px;
+    }
+
+    .clean-list li:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      background: var(--green);
+    }
+
+    .clean-list li:after {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 7px;
+      width: 7px;
+      height: 3px;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      transform: rotate(-45deg);
+    }
+
+    .proof-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 58px;
+      align-items: start;
+      padding-top: 0;
+    }
+
+    .heatmap-card {
+      text-align: center;
+    }
+
+    .heatmap-card h3 {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    .heatmap-card.red h3 {
+      color: var(--red);
+    }
+
+    .heatmap-card.green h3 {
+      color: var(--green);
+    }
+
+    .heatmap-frame {
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 26px rgba(16, 21, 37, .10);
+      background: #fff;
+    }
+
+    .heatmap-frame img {
+      width: 100%;
+      aspect-ratio: 1310 / 680;
+      object-fit: cover;
+    }
+
+    .caption {
+      color: #1f2735;
+      font-size: 14px;
+      max-width: 420px;
+      margin: 12px auto 0;
+    }
+
+    .result-card,
+    .pricing-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      box-shadow: 0 10px 28px rgba(16, 21, 37, .06);
+    }
+
+    .compare-offer {
+      display: flex;
+      justify-content: center;
+      padding-top: 0;
+    }
+
+    .pricing-card {
+      padding: 28px;
+      border-radius: 13px;
+      width: min(100%, 540px);
+    }
+
+    .special {
+      display: inline-block;
+      background: var(--green);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      border-radius: 5px;
+      padding: 6px 10px;
+      margin-bottom: 14px;
+    }
+
+    .old-price {
+      color: var(--muted);
+      text-decoration: line-through;
+      font-size: 22px;
+      margin: 3px 0 12px;
+    }
+
+    .price {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      margin: 0 0 4px;
+    }
+
+    .price strong {
+      color: var(--green);
+      font-size: 58px;
+      line-height: 1;
+    }
+
+    .price span {
+      color: var(--green);
+      font-size: 28px;
+      font-weight: 800;
+    }
+
+    .pricing-card .button {
+      width: 100%;
+      margin-top: 18px;
+    }
+
+    .results {
+      padding-top: 0;
+    }
+
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+    }
+
+    .result-card {
+      padding: 18px;
+      min-height: 126px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .google-g {
+      font-size: 28px;
+      font-weight: 900;
+      color: #4285f4;
+    }
+
+    .quote {
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .ranking-change {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      color: var(--green);
+      font-size: 26px;
+      font-weight: 900;
+    }
+
+    .arrow {
+      width: 30px;
+      height: 3px;
+      background: var(--green);
+      position: relative;
+    }
+
+    .arrow:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: -5px;
+      width: 11px;
+      height: 11px;
+      border-top: 3px solid var(--green);
+      border-right: 3px solid var(--green);
+      transform: rotate(45deg);
+    }
+
+    .faq {
+      padding-top: 0;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 36px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+      padding: 14px 18px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    details p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      z-index: 20;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+    }
+
+    .modal.open {
+      display: flex;
+    }
+
+    .modal-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(16, 21, 37, .58);
+    }
+
+    .modal-panel {
+      position: relative;
+      width: min(100%, 520px);
+      max-height: calc(100vh - 36px);
+      overflow: auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 24px 80px rgba(16, 21, 37, .28);
+      padding: 28px;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 34px;
+      height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: #fff;
+      cursor: pointer;
+      font-size: 22px;
+      line-height: 1;
+      color: var(--muted);
+    }
+
+    .modal-panel h2 {
+      font-size: 30px;
+      padding-right: 34px;
+      margin-bottom: 8px;
+    }
+
+    .modal-panel p {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    .lead-form {
+      display: grid;
+      gap: 13px;
+    }
+
+    .field {
+      display: grid;
+      gap: 6px;
+      text-align: left;
+    }
+
+    .field label {
+      font-size: 13px;
+      font-weight: 900;
+      color: #252d3c;
+    }
+
+    .field input {
+      width: 100%;
+      height: 48px;
+      border: 1px solid #d9dee7;
+      border-radius: 7px;
+      padding: 0 13px;
+      font: inherit;
+      color: var(--ink);
+      background: #fff;
+    }
+
+    .field input:focus {
+      outline: 2px solid rgba(255, 0, 0, .24);
+      border-color: var(--green);
+    }
+
+    .lead-form .button {
+      width: 100%;
+      margin-top: 6px;
+    }
+
+    .form-error {
+      display: none;
+      color: var(--red);
+      font-size: 14px;
+      font-weight: 800;
+      margin-top: 12px;
+      text-align: center;
+    }
+
+    @media (max-width: 980px) {
+      .hero,
+      .compare-offer {
+        grid-template-columns: 1fr;
+      }
+
+      .map-stack {
+        min-height: auto;
+      }
+
+      .note-arrow {
+        display: none;
+      }
+
+      .results-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 720px) {
+      .section {
+        padding: 28px 18px;
+      }
+
+      .hero {
+        gap: 28px;
+        min-height: auto;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 42px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-copy {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero .button {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .google-card-body,
+      .proof-row,
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero .map-card {
+        max-width: 390px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero .google-card-body {
+        grid-template-columns: .96fr 1.04fr;
+        min-height: 230px;
+      }
+
+      .hero .results-list {
+        padding: 12px;
+        text-align: left;
+      }
+
+      .hero .result {
+        grid-template-columns: 22px 1fr;
+        gap: 8px;
+        padding: 8px 0;
+      }
+
+      .hero .results-list .result:nth-of-type(n+5),
+      .hero .circle-btn {
+        display: none;
+      }
+
+      .hero .biz-name {
+        font-size: 12px;
+      }
+
+      .hero .biz-meta {
+        font-size: 10px;
+      }
+
+      .results-list {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .hero .results-list {
+        border-right: 1px solid var(--line);
+        border-bottom: 0;
+      }
+
+      .results-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .modal-panel {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <main>
+      <section class="section hero">
+        <div>
+          <a class="site-logo" href="#" aria-label="TSM home"><img src="assets/tsm-logo.png" alt="TSM"></a>
+          <h1>Get Your Business Into the Google Top 3 in 90 Days <span class="green-text">Or You Do Not Pay For Month 4.</span></h1>
+          <p class="hero-copy">We get your business into the Google Map Pack for your main local search term within 90 days, or month 4 is free. Backed by live ranking heatmaps and weekly reporting.</p>
+          <a class="button js-open-modal" href="#lead-form">Claim My Spot for R997</a>
+          <p class="micro">Takes 10 minutes to check your current ranking and see if you qualify for the guarantee.</p>
+        </div>
+
+        <div class="map-stack">
+          <div class="note-arrow">Map Pack<br>Top 3</div>
+          <article class="map-card">
+            <div class="search-bar"><span>electrician centurion</span><span class="glass"></span></div>
+            <div class="google-card-body">
+              <div class="results-list">
+                <div class="result-title">Businesses</div>
+                <div class="result">
+                  <span class="rank-dot">1</span>
+                  <span><b class="biz-name">Your Business</b><span class="stars" aria-label="5 star rating"></span><span class="biz-meta">Open. Closes 17:00</span></span>
+                  <span class="circle-btn"></span>
+                  <span class="circle-btn"></span>
+                </div>
+                <div class="result">
+                  <span class="rank-dot">2</span>
+                  <span><b class="biz-name">Competitor 1</b><span class="stars" aria-label="5 star rating"></span><span class="biz-meta">Electrician</span></span>
+                  <span class="circle-btn"></span>
+                  <span class="circle-btn"></span>
+                </div>
+                <div class="result">
+                  <span class="rank-dot">3</span>
+                  <span><b class="biz-name">Competitor 2</b><span class="stars" aria-label="5 star rating"></span><span class="biz-meta">Open. Closes 16:30</span></span>
+                  <span class="circle-btn"></span>
+                  <span class="circle-btn"></span>
+                </div>
+                <div class="result">
+                  <span class="rank-dot light">4</span>
+                  <span><b class="biz-name" style="color:#a2a9b4">Hidden competitor</b><span class="biz-meta">Scrolls do not happen</span></span>
+                </div>
+                <div class="result">
+                  <span class="rank-dot light">5</span>
+                  <span><b class="biz-name" style="color:#bcc2cb">Invisible result</b><span class="biz-meta">Below the calls</span></span>
+                </div>
+              </div>
+              <div class="map-art">
+                <span class="road one"></span>
+                <span class="road two"></span>
+                <span class="road three"></span>
+                <span class="pin a"></span>
+                <span class="pin b"></span>
+                <span class="pin c"></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section proof-row" id="proof">
+        <article class="heatmap-card red">
+          <h3>This Is What Losing Looks Like</h3>
+          <div class="heatmap-frame">
+            <img src="assets/heatmap-before.png" alt="Ranking heatmap showing poor local visibility with mostly red ranking points">
+          </div>
+          <p class="caption">Every red square is someone nearby searching and choosing one of your competitors.</p>
+        </article>
+        <article class="heatmap-card green">
+          <h3>This Is What Winning Looks Like</h3>
+          <div class="heatmap-frame">
+            <img src="assets/heatmap-after.png" alt="Ranking heatmap showing stronger local visibility with more green and yellow ranking points">
+          </div>
+          <p class="caption">Now you show up across your entire service area. More visibility. More calls. More customers.</p>
+        </article>
+      </section>
+
+      <section class="section compare-offer" id="ranking-check">
+        <article class="pricing-card">
+          <span class="special">Special offer</span>
+          <p>Normally</p>
+          <p class="old-price">R2,500/mo</p>
+          <p>Today</p>
+          <div class="price"><strong>R997</strong><span>/mo</span></div>
+          <p>for your first 90 days</p>
+          <ul class="clean-list" style="margin-top:18px">
+            <li>Full GBP optimisation</li>
+            <li>Website optimisation</li>
+            <li>Citations and directories</li>
+            <li>Weekly reporting</li>
+            <li>Live heatmaps</li>
+            <li>90-day guarantee</li>
+          </ul>
+          <a class="button js-open-modal" href="#lead-form">Claim My Spot for R997</a>
+          <p class="micro" style="text-align:center">No setup fees. Cancel anytime.</p>
+        </article>
+      </section>
+
+      <section class="section results">
+        <div class="section-title">
+          <h2>Real Businesses. Real Results.</h2>
+        </div>
+        <div class="results-grid">
+          <article class="result-card"><div class="google-g">G</div><div class="quote">4.9 rating</div><span class="stars" aria-label="5 star rating" style="margin:0 auto"></span><p class="micro">From 87 reviews</p></article>
+          <article class="result-card"><div class="ranking-change"><span>#27</span><span class="arrow"></span><span>#2</span></div><p class="micro">Keyword: plumber centurion</p></article>
+          <article class="result-card"><p class="quote">From nowhere to Top 3 across the whole area.</p></article>
+          <article class="result-card"><p class="quote">We went from getting maybe 2 calls a month from Google to 25+ calls a month.</p><p class="micro">Google Review</p></article>
+          <article class="result-card"><p class="quote">Best investment we have made. Worth every cent.</p><p class="micro">Google Review</p></article>
+        </div>
+      </section>
+
+      <section class="section faq">
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-grid">
+          <details><summary>How can you guarantee Top 3 rankings?</summary><p>We check your current heatmap and competition first. If the market is not realistic, we tell you before you pay.</p></details>
+          <details><summary>How long are the contracts?</summary><p>The first plan is 90 days. After that, you can continue or cancel.</p></details>
+          <details><summary>What if my market is too competitive?</summary><p>We will be honest before starting. Some markets need a longer plan before a guarantee makes sense.</p></details>
+          <details><summary>What if I already have SEO?</summary><p>That is fine. We focus specifically on Google Maps rankings and local ranking signals.</p></details>
+          <details><summary>Do I need a new website?</summary><p>Usually, no. Most businesses only need targeted fixes on the current site.</p></details>
+          <details><summary>How long does setup take?</summary><p>Once you claim your spot, setup begins after payment and access are confirmed.</p></details>
+        </div>
+      </section>
+
+    </main>
+
+    <div class="modal" id="lead-form" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="lead-form-title">
+        <button class="modal-close" type="button" aria-label="Close form" data-close-modal>&times;</button>
+        <h2 id="lead-form-title">Claim Your R997 Spot</h2>
+        <p>Fill this in and we will call you to confirm your business qualifies for the 90-day guarantee.</p>
+        <form class="lead-form" id="ranking-check-form" action="https://formspree.io/f/mbdvvvlg" method="POST">
+          <input type="hidden" name="_subject" value="New R997 local SEO spot claimed">
+          <div class="field">
+            <label for="first-name">Name</label>
+            <input id="first-name" name="name" type="text" autocomplete="given-name" required>
+          </div>
+          <div class="field">
+            <label for="surname">Surname</label>
+            <input id="surname" name="surname" type="text" autocomplete="family-name" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="business-name">Google Business name</label>
+            <input id="business-name" name="google_business_name" type="text" required>
+          </div>
+          <button class="button" type="submit">Send My Details</button>
+          <div class="form-error" id="form-error">Something went wrong. Please try again.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    const modal = document.getElementById('lead-form');
+    const form = document.getElementById('ranking-check-form');
+    const formError = document.getElementById('form-error');
+    const firstField = document.getElementById('first-name');
+
+    function openModal(event) {
+      event.preventDefault();
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      formError.style.display = 'none';
+      setTimeout(() => firstField.focus(), 50);
+    }
+
+    function closeModal() {
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.js-open-modal').forEach((button) => {
+      button.addEventListener('click', openModal);
+    });
+
+    document.querySelectorAll('[data-close-modal]').forEach((button) => {
+      button.addEventListener('click', closeModal);
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && modal.classList.contains('open')) {
+        closeModal();
+      }
+    });
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      const submitButton = form.querySelector('button[type="submit"]');
+      submitButton.disabled = true;
+      submitButton.textContent = 'Sending...';
+      formError.style.display = 'none';
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: {
+            Accept: 'application/json'
+          }
+        });
+
+        if (!response.ok) {
+          throw new Error('Form submission failed');
+        }
+
+        window.location.href = 'thank-you.html';
+      } catch (error) {
+        submitButton.disabled = false;
+        submitButton.textContent = 'Send My Details';
+        formError.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>

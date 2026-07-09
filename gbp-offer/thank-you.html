@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thank You | TSM</title>
+  <style>
+    :root {
+      --ink: #101525;
+      --muted: #5f6674;
+      --line: #e6e9ee;
+      --orange: #ff0000;
+      --shadow: 0 16px 45px rgba(18, 24, 38, .10);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #fff;
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.45;
+      padding: 24px;
+    }
+
+    .card {
+      width: min(100%, 620px);
+      text-align: center;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      padding: 44px 28px;
+    }
+
+    .logo {
+      display: inline-block;
+      margin-bottom: 26px;
+    }
+
+    .logo img {
+      width: 150px;
+      height: auto;
+      display: block;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 7vw, 56px);
+      line-height: 1.04;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 18px auto 0;
+      max-width: 480px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      margin-top: 28px;
+      padding: 0 28px;
+      border-radius: 7px;
+      border: 1px solid var(--orange);
+      background: linear-gradient(180deg, #ff3b30, var(--orange));
+      box-shadow: 0 12px 24px rgba(255, 0, 0, .20);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 900;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .micro {
+      font-size: 14px;
+      margin-top: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <a class="logo" href="index.html" aria-label="TSM home"><img src="assets/tsm-logo.png" alt="TSM"></a>
+    <h1>Thanks. We Got Your Details.</h1>
+    <p>We will check your business and call you to confirm whether you qualify for the 90-day guarantee.</p>
+    <a class="button" href="index.html">Back to the offer</a>
+    <p class="micro">This page can be used as your conversion tracking destination.</p>
+  </main>
+</body>
+</html>
