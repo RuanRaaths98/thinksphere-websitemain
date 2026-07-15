@@ -995,10 +995,22 @@
         </form>
       </div>
     </div>
+    <form name="PayFastPayNowForm" id="payfast-payment-form" action="https://payment.payfast.io/eng/process" method="post" hidden>
+      <input required type="hidden" name="cmd" value="_paynow">
+      <input required type="hidden" name="receiver" pattern="[0-9]" value="35516093">
+      <input type="hidden" name="return_url" value="https://www.thinksphere.co.za/gbp-offer/thank-you">
+      <input type="hidden" name="cancel_url" value="https://www.thinksphere.co.za/gbp-offer/cancel">
+      <input type="hidden" name="notify_url" value="https://www.thinksphere.co.za/api/payfast/notify">
+      <input required type="hidden" name="amount" value="997">
+      <input required type="hidden" name="item_name" maxlength="255" value="Google Business Profile Local Top 3 Map Pack">
+      <input type="hidden" name="item_description" maxlength="255" value="Get your business into Google's Top 3 Map Pack results in 90 days with GBP and website optimisation, citations, live ranking heatmaps, weekly reports and a results-backed guarantee.">
+      <input type="image" src="https://my.payfast.io/images/buttons/BuyNow/Dark-Large-BuyNow.png" alt="Buy Now" title="Buy Now with Payfast">
+    </form>
   </div>
   <script>
     const modal = document.getElementById('lead-form');
     const form = document.getElementById('ranking-check-form');
+    const payfastForm = document.getElementById('payfast-payment-form');
     const formError = document.getElementById('form-error');
     const firstField = document.getElementById('first-name');
 
@@ -1057,7 +1069,8 @@
           throw new Error('Form submission failed');
         }
 
-        window.location.href = 'thank-you.html';
+        submitButton.textContent = 'Opening PayFast...';
+        payfastForm.submit();
       } catch (error) {
         submitButton.disabled = false;
         submitButton.textContent = 'Send My Details';
