@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Thank You | TSM</title>
+  <title>Payment Received | TSM</title>
   <!-- Meta Pixel Code -->
   <script src="../meta-pixel.js"></script>
   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1394943821614425&ev=PageView&noscript=1"></noscript>
@@ -13,6 +13,7 @@
       --ink: #101525;
       --muted: #5f6674;
       --line: #e6e9ee;
+      --soft: #f7faf8;
       --orange: #ff0000;
       --shadow: 0 16px 45px rgba(18, 24, 38, .10);
     }
@@ -23,28 +24,26 @@
 
     body {
       margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
+      min-height: 100dvh;
       background: #fff;
       color: var(--ink);
       font-family: Arial, Helvetica, sans-serif;
       line-height: 1.45;
-      padding: 24px;
+      padding: 32px 24px;
     }
 
     .card {
-      width: min(100%, 620px);
-      text-align: center;
+      width: min(100%, 920px);
+      margin: 0 auto;
       border: 1px solid var(--line);
       border-radius: 14px;
       box-shadow: var(--shadow);
-      padding: 44px 28px;
+      padding: clamp(28px, 5vw, 54px);
     }
 
     .logo {
       display: inline-block;
-      margin-bottom: 26px;
+      margin-bottom: 30px;
     }
 
     .logo img {
@@ -55,16 +54,79 @@
 
     h1 {
       margin: 0;
-      font-size: clamp(34px, 7vw, 56px);
+      max-width: 780px;
+      font-size: clamp(34px, 6vw, 58px);
       line-height: 1.04;
       letter-spacing: 0;
     }
 
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--orange);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
     p {
-      margin: 18px auto 0;
-      max-width: 480px;
+      margin: 18px 0 0;
+      max-width: 650px;
       color: var(--muted);
       font-size: 18px;
+    }
+
+    .video-shell {
+      margin-top: 34px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #101525;
+      box-shadow: 0 18px 38px rgba(16, 21, 37, .12);
+      aspect-ratio: 16 / 9;
+    }
+
+    .video-shell iframe {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border: 0;
+    }
+
+    .next-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .step {
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--soft);
+      padding: 20px;
+    }
+
+    .step b {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    .step span {
+      display: block;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 30px;
     }
 
     .button {
@@ -72,7 +134,6 @@
       align-items: center;
       justify-content: center;
       min-height: 52px;
-      margin-top: 28px;
       padding: 0 28px;
       border-radius: 7px;
       border: 1px solid var(--orange);
@@ -85,19 +146,71 @@
       text-align: center;
     }
 
+    .secondary {
+      color: var(--muted);
+      font-size: 15px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
     .micro {
       font-size: 14px;
-      margin-top: 14px;
+      margin-top: 22px;
+    }
+
+    @media (max-width: 760px) {
+      body {
+        padding: 18px;
+      }
+
+      .card {
+        padding: 28px 20px;
+      }
+
+      .next-steps {
+        grid-template-columns: 1fr;
+      }
+
+      .actions {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .button,
+      .secondary {
+        width: 100%;
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
   <main class="card">
     <a class="logo" href="/gbp-offer/" aria-label="TSM home"><img src="/gbp-offer/assets/tsm-logo.png" alt="TSM"></a>
-    <h1>Thanks. We Got Your Details.</h1>
-    <p>We will check your business and call you to confirm whether you qualify for the 90-day guarantee.</p>
-    <a class="button" href="/gbp-offer/">Back to the offer</a>
-    <p class="micro">This page can be used as your conversion tracking destination.</p>
+    <p class="eyebrow">Payment received</p>
+    <h1>Your Google Map Pack campaign is in motion.</h1>
+    <p>Watch this short video first. It explains what happens next, what we need from you, and how the first few days of setup will work.</p>
+
+    <div class="video-shell">
+      <iframe
+        src="https://www.youtube.com/embed/2uK0xC7S5oQ?rel=0&modestbranding=1&autoplay=1&mute=1"
+        title="Google Map Pack campaign next steps"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="next-steps" aria-label="What happens next">
+      <div class="step"><b>1. We review your details</b><span>We check your Google Business Profile, website, category, location, and local competition.</span></div>
+      <div class="step"><b>2. We confirm access</b><span>We will contact you if we need GBP access, website access, photos, services, or business details.</span></div>
+      <div class="step"><b>3. Setup begins</b><span>Once access is confirmed, we begin the optimisation work and prepare your first ranking view.</span></div>
+    </div>
+
+    <div class="actions">
+      <a class="button" href="/gbp-offer/">Back to the offer</a>
+      <a class="secondary" href="mailto:ruan@thinksphere.co.za">Need help? Email us</a>
+    </div>
+    <p class="micro">Keep an eye on your inbox and phone. We will use the details you submitted before payment.</p>
   </main>
 </body>
 </html>
